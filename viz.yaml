@@ -199,7 +199,7 @@ fetch:
     depends: ["view-limits", "storm-area-filter"]
     scripts: [scripts/fetch/fetch.precip_spatial.R, scripts/fetch/fetch.states.R]
     location: cache/irma_cells.rds
-    cell_size: 15000
+    cell_size: 10000
     reader: rds
     refetch: TRUE
   -
