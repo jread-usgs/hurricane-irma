@@ -38,8 +38,9 @@ var animatePrcp = function(timestep, $currentStormDot) {
     }
   });
 
-  $('.nwis-dot').css('fill', '#73877B').css('stroke', "#385F71");
-  $('.f-' + timestep).css('fill', '#ff7000');
+  $('.nwis-dot').css('stroke-opacity', '0');
+  $('.f-' + timestep).css('stroke-opacity', '1').css('stroke-width', '2.5');
+  $('.nwis-flooding-legend').css('stroke-opacity', '1').css('stroke-width', '2.5');
   $('#timestamp-text').html(prcpTimes.times[timestep - 1]);
 
   var darkWidth = (timestep+1)/prcpTimes.times.length;

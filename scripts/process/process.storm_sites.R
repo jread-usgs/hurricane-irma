@@ -20,7 +20,7 @@ process.select_flood_sites <- function(viz = as.viz('storm-sites-flood')) {
   s.ids <- sites_filtered$site_no
   sites_filtered@data <- data.frame(id = paste0('nwis-', s.ids), 
                             class = 'nwis-dot',
-                            r = '3.5',
+                            r = '4.5',
                             onmousemove = sprintf("hovertext('USGS %s',evt);", s.ids),
                             onmouseout = sprintf("setNormal('sparkline-%s');setNormal('nwis-%s');hovertext(' ');", s.ids, s.ids),
                             onmouseover= sprintf("setBold('sparkline-%s');setBold('nwis-%s');", s.ids, s.ids),

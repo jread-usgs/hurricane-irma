@@ -207,7 +207,7 @@ fetch:
     id: precip-cell-data
     fetcher: precipCellData
     start.date: "2017-08-25"
-    end.date: "2017-09-02"
+    end.date: "2017-09-06"
     scripts: scripts/fetch/fetchPrecip_cells.R
     location: cache/precip_cells.csv
     mimetype: text/csv
@@ -217,7 +217,7 @@ fetch:
     id: precip-cell-data-mobile
     fetcher: precipCellData
     start.date: "2017-08-25"
-    end.date: "2017-09-02"
+    end.date: "2017-09-06"
     scripts: scripts/fetch/fetchPrecip_cells.R
     location: cache/precip_cells-mobile.csv
     mimetype: text/csv
